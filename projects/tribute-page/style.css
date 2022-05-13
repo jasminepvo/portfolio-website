@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+    color: #7a4f31;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    color: #5379c5;
+    font-size: 50px;
+    text-align: center;
+  }
+  
+  #main {
+    margin: 10px 8px;
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    border-radius: 2px;
+    background: #f0f6fc;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  #img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  #img-caption {
+    color: #5379c5;
+    margin: 15px 0 5px 0;
+  }
+  
+  ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #5379c5;
+  }

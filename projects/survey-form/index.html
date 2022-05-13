@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">
+            Dr. Phoummavong Post Treatment Survey
+          </h1>
+          <p id="description" class="description text-center">
+            Thank you for coming in today. Please leave an honest review to ensure I am providing you with the best care possible.
+          </p>
+        </header>
+      
+        <form id="survey-form">
+          <!-- Email is required -->
+          <div class="form-group">
+            <label id="name-label" for="name">
+              Name
+            </label>
+            <input 
+                   type="text" 
+                   name="name" 
+                   id="name" 
+                   class="form-control" 
+                   placeholder='Enter your name' 
+                   required />
+          </div>
+          
+          <!-- Email is required -->
+          <div class="form-group">
+            <label id="email-label" for="email">
+              Email
+            </label>
+            <input 
+                   type="email" 
+                   email="email" 
+                   id="email" 
+                   class="form-control" 
+                   placeholder='Enter your email' 
+                   required />
+          </div>
+          
+          <!-- Number is required -->
+          <div class="form-group">
+            <label id="number-label" for="number">
+              Number
+            </label>
+            <input 
+                   type="number" 
+                   name="number" 
+                   id="number"
+                   min="000000000"
+                   max="999999999"
+                   class="form-control" 
+                   placeholder='Enter your phone number' 
+                   required />
+          </div>
+          
+          <!-- Dropdown Role -->
+          <div class="form-group">
+            <p> Which option best describes your role?
+            </p>
+            <select 
+                    id="dropdown" 
+                    name="role" 
+                    class="form-control">
+              <option disabled selected value> Select role
+              </option>
+              <option 
+                      value="new">
+                New Patient
+              </option>
+              <option
+                      value="patient">
+                Returning Patient
+              </option>
+            </select>
+            
+            <!-- Checkboxes -->
+            <div class="form-group">
+              <p> What area of the body were you having pain or tightness with?
+                <span class="clue"> (Check all that apply) 
+                </span>
+              </p>
+              <label>
+                <input
+                       name="issue"
+                       value="neck"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Neck </label>
+              <label>
+                <input
+                       name="issue"
+                       value="upper-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Upper Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="mid-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Mid Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="low-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Lower Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="legs-knee"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Legs/Knee </label>
+              <label>
+                <input
+                       name="issue"
+                       value="feet"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Feet </label>
+              <label>
+                <input
+                       name="issue"
+                       value="other"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Other </label>
+            </div>
+            
+            <!-- Additional Checkboxes -->
+            <div class="form-group">
+              <p> What area of the body was I able to alleviate the pain or tighness?
+                <span class="clue"> (Check all that apply) 
+                </span>
+              </p>
+              <label>
+                <input
+                       name="issue"
+                       value="neck"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Neck </label>
+              <label>
+                <input
+                       name="issue"
+                       value="upper-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Upper Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="mid-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Mid Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="low-back"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Lower Back </label>
+              <label>
+                <input
+                       name="issue"
+                       value="legs-knee"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Legs/Knee </label>
+              <label>
+                <input
+                       name="issue"
+                       value="feet"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Feet </label>
+              <label>
+                <input
+                       name="issue"
+                       value="other"
+                       type="checkbox"
+                       class="input-checkbox"/>
+                Other </label>
+            </div>
+            
+            <!-- Radio button grouped by name -->
+            <div class="form-group">
+              <p> Would you recommend my services to someone else?
+              </p>
+              <label>
+                <input
+                       name="user-recommend"
+                       value="definitely"
+                       type="radio"
+                       class="input-radio"
+                       checked/>
+                Definitely </label>
+              <label>
+                <input
+                       name="user-recommend"
+                       value="maybe"
+                       type="radio"
+                       class="input-radio"
+                       />
+                Maybe </label>
+              <label>
+                <input
+                       name="user-recommend"
+                       value="no"
+                       type="radio"
+                       class="input-radio"
+                       />
+                No </label>
+            </div>
+            
+            <!-- Text area for comments -->
+            <div class="form-group">
+              <p> Any comments or concerns?
+              </p>
+              <textarea
+                        id="comments"
+                        name="comments"
+                        class="input-comments"
+                        placeholder="Enter your comments here"> 
+              </textarea>
+            </div>
+            
+            <!-- Submit button -->
+            <div class="form-group">
+              <button
+                      type="submit"
+                      id="submit"
+                      class="submit-button">
+              Submit </button>
+            </div>
+            
+        </form>
+      </div>
+</body>
+</html>
