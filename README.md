@@ -1,4 +1,1 @@
-# portfolio-website
-
-Google Domains hosted by Firebase
-https://portfolio-jasminepvodev.web.app
+# Hi, view my portfolio [here](https://jasminepvo.dev)
